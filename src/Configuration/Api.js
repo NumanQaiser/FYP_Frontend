@@ -22,7 +22,7 @@ console.log("hitting created" ,data)
 async function userLogin(user) {
     console.log(user)
     try {
-        const response = await axios.post(`http://localhost:4001/user/login`, user)
+        const response = await axios.post(`${url}/user/login`, user)
         return response
     } catch (error) {
         console.log("error into user login api call", error.stack);

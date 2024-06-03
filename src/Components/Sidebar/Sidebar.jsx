@@ -8,35 +8,29 @@ import customer from "../../Assests/Icons/personIcon.svg"
 import group from "../../Assests/Icons/groupIcon.svg"
 import Transactions from "../../Assests/Icons/transectionIcon.svg"
 import navv from "../../Assests/Icons/navvIcon.svg"
-function Sidebar() {
+function Sidebar({ setShow }) {
     return (
         <div className='mainSidebar border '>
 
             <p className='fw-bold fs-2 text-center'>MENU</p>
             <ul>
-                <li>
-
-                    Dashboard
+                <li onClick={() => setShow("add")}>
+                    Add Script
                 </li>
-                <li>
 
-                    <a > Orders</a>
+                <li onClick={() => setShow("my")}>
+                    My Script
                 </li>
-                <li>
 
-                    Sellers</li>
-                <li>
+                <li onClick={() => setShow("community")}>
+                    Community Script
+                </li>
 
-                    Customers</li>
-                <li>
+                <li onClick={() => setShow("guidelines")}>
+                    Guidelines
+                </li>
 
-                    Groups</li>
-                <li>
 
-                    Transactions</li>
-                <li>
-
-                    Nuvv Spaces</li>
             </ul>
         </div>
     )

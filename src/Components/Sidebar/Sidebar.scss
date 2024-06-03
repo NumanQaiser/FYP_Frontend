@@ -9,18 +9,20 @@
     ul {
         list-style: none;
         padding: 0;
-        margin: 0;
+        margin: 10px;
 
         li {
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-            font-size: 14px;
+            
+            font-size: 18px;
             font-weight: 700;
             line-height: 18.23px;
-            color: rgb(77, 55, 204);
+            color: white;
             cursor: pointer;
-            margin-top: 4%;
-            margin-bottom: 4%;
-            padding-left: 10%;
+            margin-top: 20%;
+            margin-bottom: 8%;
+            padding:5%;
+            background-color: black;
+
 
            
         }

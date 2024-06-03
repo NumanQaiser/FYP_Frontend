@@ -188,7 +188,7 @@ function Scan() {
                         <p className="fs-3 text-center fw-bold text-capitalize">Start Scanning your website</p>
                         <form className='w-50 m-auto ps-5 ' onSubmit={onSubmit}>
                             <input type="url" name="email" className='w-50 ms-5 border-radius-2 p-1' placeholder='Enter url please!' onChange={(e) => setUrl(e.target.value)} />
-                            <input type="submit" className='btn btn-secondary  ms-2 text-light fw-bold' defaultValue="Subscribe" value={"Subscribe"}
+                            <input type="submit" className='btn btn-secondary  ms-2 text-light fw-bold' defaultValue="Subscribe" value={"Submit"}
                             />
                         </form>
 

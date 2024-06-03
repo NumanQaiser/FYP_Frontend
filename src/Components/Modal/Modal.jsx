@@ -20,8 +20,8 @@ const Modal = ({ show, close, title, children }) => {
                                     </button> */}
                             </header>
                             <main className="modal_content">
-                                {children}
-                               {/* <p>asd</p> */}
+                                {/* {children} */}
+                               <p>asd</p>
                             </main>
                             <footer className="modal_footer">
                                 <button className="modal-close" onClick={() => close()}>

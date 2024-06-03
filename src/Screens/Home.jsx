@@ -8,8 +8,8 @@ function Home() {
 
          <div className="row">
             <div className="col">
-               <p className="fw-bold fs-1 text-center pt-5 mt-5 text-lowercase">
-                  we Provide <span style={{color:"#22577a" ,textTransform:"uppercase" ,fontStyle:"oblique"}}>best security</span> solution to your online presence
+               <p className="fw-bold fs-1 text-center pt-5 mt-5 ">
+                  We provide <span style={{color:"#22577a" ,textTransform:"uppercase" ,fontStyle:"oblique"}}>best security</span> solution to your online presence
                </p>
             </div>
 

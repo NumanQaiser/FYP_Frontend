@@ -1,5 +1,5 @@
 import axios from "axios"
-const baseUrl = process.env.URL
+const baseUrl = process.env.URL ||  "http://localhost:4001"
 
 const sendScanRequest = async (req) => {
     console.log("URL", req)
@@ -8,12 +8,13 @@ const sendScanRequest = async (req) => {
         return
     }
 
-    return await axios.get(`http://localhost:4001/scan/initial?url=${req}`).then((response) =>
+    return await axios.get(`${baseUrl}/scan/initial?url=${req}`).then((response) =>
         response).catch((err) => {
             alert("Someting went wrong");
             console.log("Error into scan api", err)
         })
 }
+
 
 
 export {
