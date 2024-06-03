@@ -11,6 +11,7 @@ import UserProfile from '../Screens/UserProfile'
 import Home from '../Screens/Home'
 import Scan from '../Screens/Scan'
 import ExploitsDB from '../Screens/Exploits/ExploitsDB'
+import Feed from '../Screens/Feed/Feed'
 
 
 export const RoutHistory = {
@@ -30,21 +31,28 @@ function MainNavigation() {
             <Route path='/signup' element={<SignUpScreen />} />
             <Route path='/' element={
                 <ProtectedRoutes isLogin={login} >
-                     <Home />
+                    <Home />
                 </ProtectedRoutes>
             }
             />
-             <Route path='/Scan' element={
+            <Route path='/Scan' element={
                 <ProtectedRoutes isLogin={login} >
-                     <Scan/>
+                    <Scan />
                 </ProtectedRoutes>
             }
             />
             <Route path='/exploits' element={
                 <ProtectedRoutes isLogin={login}>
-                    <ExploitsDB/>
+                    <ExploitsDB />
                 </ProtectedRoutes>
-            }/>
+            } />
+
+            <Route path='/feed' element={
+                <ProtectedRoutes isLogin={login} >
+                    <Feed />
+                </ProtectedRoutes>
+            }
+            />
             <Route path='/book' element={
                 <ProtectedRoutes isLogin={login}>
                     <BookScreen activeUser={userData} />

@@ -7,7 +7,7 @@ function Footer() {
   const [msg, setMsg] = useState();
   const [sucecss, setSucces] = useState(false)
   return (
-    <div className='text-center'>
+    <div className='text-center mt-5'>
 
 
       {/* this is for bottom footer */}

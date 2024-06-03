@@ -1,0 +1,14 @@
+.mainHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .leftSideMain {
+        width: 20%;
+    }
+
+    .rightSideMain {
+        width: 80%;
+        // background-color: green;
+    }
+}

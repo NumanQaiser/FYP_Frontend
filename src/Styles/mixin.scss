@@ -1,6 +1,60 @@
+@import "./variables.scss";
 
 
-@mixin reset{
+@mixin reset {
     padding: 0;
     margin: 0;
+}
+
+@mixin liststyle {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin sidebar_text {
+    font-family: $fontFamily ;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.23px;
+    color: white;
+    cursor: pointer;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    // border: 1px solid black;
+
+}
+
+@mixin table_heading_text {
+    font-family: $fontFamily;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.23px;
+    background: #494761;
+    text-align: left;
+}
+
+@mixin table_row_text {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.62px;
+    color: #03030B;
+    // text-align: left;
+
+}
+
+@mixin makeRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin heading {
+    font-family: $fontFamily;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.66px;
+    text-align: left;
+
 }

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { RoutHistory } from "../Navigation/MainNavigation";
-const url = process.env.URL;
+const url = "http://localhost:4001" || process.env.URL;
 const cve_url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 // For user creation call
 const userCreate = async (data) => {
@@ -92,7 +92,7 @@ const CVE_API = async (query) => {
 
     try {
         const result = await axios.get(`${cve_url}?keywordSearch=${query.search}&resultsPerPage=${query.limit}`)
-        return result?.data
+        return result
 
 
     } catch (error) {

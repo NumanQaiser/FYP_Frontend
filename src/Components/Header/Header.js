@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' ;
 import { AppContext, useAppContext } from '../../StateManagement/Context'
 import { RoutHistory } from '../../Navigation/MainNavigation'
 
@@ -15,9 +15,9 @@ function Header() {
     }
     return (
         <div>
-            <nav class="navbar navbar-expand-lg mt-3 container bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand">CyberDB</a>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand fw-bold fs-3">CyberDB</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -26,7 +26,7 @@ function Header() {
                             <li class="nav-item">
                                 {
                                     login ?
-                                        <a class="nav-link" onClick={() => RoutHistory.navigate("/")} >Home</a>
+                                        <a class="nav-link fw-medium" onClick={() => RoutHistory.navigate("/")} style={{cursor:'pointer'  }} >Home</a>
                                         :
                                         ""
                                 }
@@ -34,7 +34,7 @@ function Header() {
                             <li class="nav-item">
                                 {
                                     login ?
-                                        <a class="nav-link" onClick={() => RoutHistory.navigate("/Scan")} >Scanning</a>
+                                        <a class="nav-link fw-medium" onClick={() => RoutHistory.navigate("/Scan")} style={{cursor:'pointer'  }}  >Scanning</a>
                                         :
                                         ""
                                 }
@@ -42,7 +42,7 @@ function Header() {
                             <li class="nav-item">
                                 {
                                     login ?
-                                        <a class="nav-link " onClick={() => RoutHistory.navigate("/exploits")} >Exploits DB</a>
+                                        <a class="nav-link fw-medium " onClick={() => RoutHistory.navigate("/exploits")} style={{cursor:'pointer'  }}  >Exploits DB</a>
                                         :
                                         ""
                                 }
@@ -50,7 +50,7 @@ function Header() {
                             <li class="nav-item">
                                 {
                                     login ?
-                                        <a class="nav-link" onClick={() => RoutHistory.navigate("/feed")} >Code Feed</a>
+                                        <a class="nav-link fw-medium" onClick={() => RoutHistory.navigate("/feed")} style={{cursor:'pointer'  }} >Script Feed</a>
                                         :
                                         ""
                                 }
@@ -62,15 +62,15 @@ function Header() {
                             <li class="nav-item ">
                                 {
                                     login ?
-                                        <a class="nav-link" aria-current="page" onClick={handleLougOut}>
+                                        <a class="nav-link fw-medium " aria-current="page" onClick={handleLougOut} style={{cursor:'pointer'  }} >
                                             LogOut
                                         </a>
                                         :
-                                        <div className='row'>
-                                            <a class="nav-link col" aria-current="page" onClick={() => RoutHistory.navigate("/login")}>
+                                        <div className='row fw-medium'>
+                                            <a class="nav-link col fw-medium" aria-current="page" onClick={() => RoutHistory.navigate("/login")} style={{cursor:'pointer'  }} >
                                                 LogIn
                                             </a>
-                                            <a class="nav-link col" aria-current="page" onClick={() => RoutHistory.navigate("/signup")}>
+                                            <a class="nav-link col fw-medium" aria-current="page" onClick={() => RoutHistory.navigate("/signup")} style={{cursor:'pointer'  }} >
                                                 SignIn
                                             </a>
                                         </div>
@@ -80,7 +80,7 @@ function Header() {
                             <li class="nav-item">
                                 {
                                     login ?
-                                        <a class="nav-link" onClick={() => RoutHistory.navigate("/profile")}>
+                                        <a class="nav-link fw-medium" onClick={() => RoutHistory.navigate("/profile")} style={{cursor:'pointer'  }}  >
                                             Profile
                                         </a>
                                         :
